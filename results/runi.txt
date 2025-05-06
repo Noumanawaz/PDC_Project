@@ -1,0 +1,13 @@
+
+echo "Compiling programs..."
+g++ -O3 Sequential.cpp -o sequential
+mpic++ -O3 -fopenmp mpi_only.cpp -o mpi_only
+mpic++ -O3 -fopenmp hybrid.cpp -o hybrid
+
+
+./sequential
+
+mpirun -np 2 ./mpi_only
+
+
+  mpirun -np 2 ./hybrid 3
