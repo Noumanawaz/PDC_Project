@@ -1,0 +1,6 @@
+Total Time: 0.736252 seconds
+Compute Time: 0.735734 seconds
+I/O Time: 0.000279 seconds
+MPI Processes: 2
+OpenMP Threads per Process: 1
+Total Threads: 2
